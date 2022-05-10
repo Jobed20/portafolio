@@ -69,33 +69,74 @@ html::-webkit-scrollbar-thumb{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 
-header{
+.hidden{
+  display: none;
+}
+
+.intro{
+  background-color: #98a7fc;
+}
+
+.header{
+  background-color: var(--body-color);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 50px;
   z-index: 100;
 }
 
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
 .logo{
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 20px;
+  padding: 0 40px;
+  font-weight: bold;
   color: var(--main-color);
-  margin-left: 50px;
 }
 
-.nav-link{
-  font-size: 0.94rem;
-  padding: 4px 8px ;
-  border-radius: 0.2rem;
+.nav-menu{
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+  
+  
+}
+
+.nav-menu-item{
+  font-size: 15px;
+  margin:  10px;
+  width: max-content;
+  margin-top: 17px;
+
+}
+
+.nav-menu-link{
+  padding: 8px 12px;
+  border-radius: 3px;
   color: #fff;
 }
 
-.nav-link:hover{
+.nav-menu-link:hover,
+.nav-menu-link-active{
+  background-color: var(--main-color);
+  transition: 0.5s;
+}
+
+.nav-toggle{
   color: var(--box-color);
-  background: var(--container-color);
-  
-  transition: 0.3s all linear;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
 }
 
 /* Menu icon=== */
