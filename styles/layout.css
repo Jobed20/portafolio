@@ -249,6 +249,10 @@ margin: 10px;
   .nav-menu_visible{
     left: 0;
   }
+
+  .form{
+    padding: 3.5rem 1rem;
+  }
 }
 
 

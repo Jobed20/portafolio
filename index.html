@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/407ff9dc18.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <!--Header-->
@@ -23,32 +23,28 @@
                 </button>
                 <ul class="nav-menu nav-menu_visible">
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link .nav-menu-link-active">
+                        <a href="#home" class="nav-menu-link .nav-menu-link-active">
                             Inicio
                         </a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">
+                        <a href="#about" class="nav-menu-link">
                             Acerca de mi
                         </a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">
+                        <a href="#skills" class="nav-menu-link">
                             Mis Habilidades
                         </a>
                     </li>
+                    
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">
-                            Mi experiencia
-                        </a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">
+                        <a href="#portfolio" class="nav-menu-link">
                             Portafolio
                         </a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="" class="nav-menu-link">
+                        <a href="#contact" class="nav-menu-link">
                             Contacto
                         </a>
                     </li>
@@ -59,8 +55,8 @@
 
         <main>
             <!--HOME SECTION-->
-            <section class="home container" id="home">
-                <div class="home-content">
+            <section class="home container" id="home" >
+                <div class="home-content" data-aos="fade-up" data-aos-duration="1000">
                     <div class="home-img">
                         <img src="./assets/imagenes/Rectangle 45.png" alt="cara">
                     </div>
@@ -80,7 +76,7 @@
             </section>
     
             <!--ABOUT SECTION-->
-            <section class="about" id="about">
+            <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000">
     
                 <!--heading-->
                 <h2 class="heading">Acerca de mi</h2>
@@ -98,7 +94,7 @@
             </section>
     
             <!--SKILLS SECTION=-->
-            <section class="skills containerSkills" id="skills">
+            <section class="skills containerSkills" id="skills" data-aos="fade-up" data-aos-duration="1000">
                 <!--heading-->
                 <h2 class="heading ">Habilidades</h2>
                 <!--skills content-->
@@ -138,7 +134,7 @@
             </section>
 
             <!--PORTFOLIO SECTION-->
-            <section class="portfolio" id="portfalio">
+            <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
                 <!--heading-->
                 <h2 class="heading">Portafolio</h2>
                 <!--portfolio content-->
@@ -167,11 +163,32 @@
             </section>
 
             <!--CONTACT SECTION-->
-            <section class="contact" >
+            <section class="contact" data-aos="fade-up" data-aos-duration="500">
                 <!--heading-->
                 <h2 class="heading">Contacto</h2>
-               
-                
+                <div class= "contact-container" id="contact">
+
+
+                    <form class="form"   action="https://formspree.io/f/mpzbkpyd"
+                    method="POST">
+                        <div class="form-container">
+                            <h2 class="form-title">Contact me</h2>
+                            <input type="text" class="form-input" placeholder="Name" name="name">
+                            <input type="email" class="form-input" placeholder="Email" name="email">
+                            <textarea class="form-input form-input-message" placeholder="Message:" name="message"></textarea>
+
+                            <input type="submit" value="enviar" class="form-cta">
+
+
+
+                        </div>
+                    </form>
+                    
+
+
+
+
+                </div>
                 <!--contact content-->
             </section>
         </main>
@@ -195,5 +212,9 @@
             <p class="CR">&#169; Jose Obed Estrada Torres</p>
         </footer>
         <script src="./main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     </body>
 </html>

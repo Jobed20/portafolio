@@ -13,7 +13,7 @@
   --main-color:#3DCFD3;
   --body-color:#0e0e0e;
   --container-color:#3DCFD3;
-  --heading-color:#5e5e5c;
+  --heading-color:#b1b1af;
   --box-color:#fff;
 }
 
@@ -300,8 +300,9 @@ html::-webkit-scrollbar-thumb{
 }
 
 .skills-box:hover{
-  transform: scale(1.05);
+  transform: scale(1.06);
   transition: 0.5s all cubic-bezier(0.075,0.82, 0.165,1);
+  box-shadow: 5px 5px 10px rgb(61, 57, 57) ;
 }
 
 .skills-box .fa-brands{
@@ -310,6 +311,7 @@ html::-webkit-scrollbar-thumb{
   padding: 10px;
   border-radius: 5rem;
   border: 2px dashed var(--main-color);
+  
 
 }
 
@@ -345,6 +347,7 @@ html::-webkit-scrollbar-thumb{
 
  
 }
+
 
 
 /* Portafolio=====*/
@@ -394,10 +397,69 @@ html::-webkit-scrollbar-thumb{
 }
 
 /* CONTACTO======= */
-.contact{
-  background-color: var(--box-color);
+.form{
+  background-color: var(--body-color);
+  width: 100%;
+  max-width:400px;
+  display: flex;
+  padding: 3.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  
 }
 
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.form-container {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-auto-columns: 100%;
+
+}
+
+.form-title{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: .8rem;
+  color:var(--box-color);
+
+}
+
+.form-input{
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  
+}
+
+.form-input-message{
+  resize: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-cta{
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: var(--container-color);
+  color: #fff;
+  border: none;
+  font-weight: 300px;
+  padding: 0.7rem 0;
+  border-radius: .2rem;
+  cursor: pointer;
+
+
+
+}
 
 
 /* footer========= */
