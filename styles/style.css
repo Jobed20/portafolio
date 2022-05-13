@@ -46,12 +46,11 @@ li{
   width: 100%;
 }
 
-.containerSkills{
-  background-color: var(--body-color);
-  max-width: 95%;
-  margin: auto;
-  width: 80%;
+
+.div {
+  width: 600px; height: 360px; margin-bottom: 10px;
 }
+
 
 /* SCROLL==== */
 html::-webkit-scrollbar{
@@ -69,6 +68,11 @@ html::-webkit-scrollbar-thumb{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 
+.menu{
+  height: 10px;
+  position: relative;
+}
+
 .hidden{
   display: none;
 }
@@ -77,65 +81,74 @@ html::-webkit-scrollbar-thumb{
   background-color: #98a7fc;
 }
 
-.header{
-  background-color: var(--body-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  z-index: 100;
-}
-
 .nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
 } 
 
+.header{
+  background-color: var(--body-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 100;
+}
+
+
+
+
 .logo{
-  font-size: 20px;
-  padding: 0 40px;
+  font-size: 25px;
+  padding: 0 50px;
   font-weight: bold;
   color: var(--main-color);
+  padding-top: 20px;
+}
+nav{
+  background: var(--body-color);
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
 }
 
-.nav-menu{
-  display: flex;
-  margin-right: 40px;
-  list-style: none;
-  
+nav ul{
+  float: right;
+  margin-right: 0px;
+  padding-top: 20px;
   
 }
-
-.nav-menu-item{
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: rgb(247, 245, 245);
   font-size: 15px;
-  margin:  10px;
-  width: max-content;
-  margin-top: 17px;
-
-}
-
-.nav-menu-link{
-  padding: 8px 12px;
+  padding: 7px 13px;
   border-radius: 3px;
-  color: #fff;
+  text-transform: uppercase;
 }
-
-.nav-menu-link:hover,
-.nav-menu-link-active{
-  background-color: var(--main-color);
-  transition: 0.5s;
+ li a:hover{
+  background: var(--container-color);
+  transition: .5s;
 }
-
-.nav-toggle{
-  color: var(--box-color);
-  background: none;
-  border: none;
+.checkbtn{
   font-size: 30px;
-  padding: 0 20px;
-  line-height: 60px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
   cursor: pointer;
+  display: none;
+}
+#check{
   display: none;
 }
 
@@ -295,9 +308,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 /* Skills==== */
-.skills{
-  background-color: #fff;
-}
+
 
 .skills-box:hover{
   transform: scale(1.06);
@@ -346,6 +357,13 @@ html::-webkit-scrollbar-thumb{
   color: var(--box-color);
 
  
+}
+
+.containerSkills{
+  background-color: var(--box-color);
+  max-width: 95%;
+  margin: auto;
+  width: 80%;
 }
 
 
