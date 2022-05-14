@@ -12,65 +12,75 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/407ff9dc18.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        
+        <link rel="stylesheet" href="./styles/stars/stars.css">
     </head>
     <body>
         <!--Header-->
-        <header class="header" >
-          
+        <header class="header" >  
             <nav class="menu">
                 <nav class="nav">
                     <a href="#" class="logo">&lt;Obed/&gt;</a>
                 <input type="checkbox" id="check">
+
                 <label for="check" class="checkbtn">
                     <i class="fa-solid fa-bars"></i>
                 </label>
                 
                 <ul>
-                    <li><a  href="#home">Inicio</a></li>
-                    <li><a href="#about">Acerca de mi</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a  href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#skills">Abilities</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </nav>    
         </header>
         
 
-        <main>
-            <!--HOME SECTION-->
+        <main>   
+            <!--HOME SECTION-->  
             <section class="home container" id="home" >
-
+                <section >
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div id="title">
+                </section>          
                 <div class="home-content" data-aos="fade-up" data-aos-duration="1000">
+                    
                     <div class="home-img">
-                        <img src="./assets/imagenes/Rectangle 45.png" alt="cara">
+                        <img src="./assets/imagenes/WhatsApp Image 2022-05-13 at 7.23.08 PM.jpeg" alt="cara">
                     </div>
                     <div class="home-text">
-                        <h3>Hola</h3>
-                        <h2>Soy <span class="color">Obed</span></h2>
-                        <p>Front End Web <span class="color">Developer</span> </p>
+                        <h3>Hi</h3>
+                        <h2>I'm <span class="color">Obed Estrada</span></h2>
+                        <p>Full Stack Web <span class="color">Developer</span> </p>
                         
                         <!--social icons-->
                         <div class="social">
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/estrada-torres-158946233/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/Jobed20"><i class="fa-brands fa-github"></i></a>
+                            <a href="Mailto:obedestrada52@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                         </div>
                     </div>
                 </div>
+                
             </section>
     
             <!--ABOUT SECTION-->
             <section class="about" id="about" data-aos="fade-up" data-aos-duration="1000">
     
                 <!--heading-->
-                <h2 class="heading">Acerca de mi</h2>
+                <h2 class="heading">About Me</h2>
     
                 <!--About Content-->
                 <div class="about-content">
                     <div class="about-data">
-                        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ad quia quae ut nihil odit dolorum impedit totam aut amet rerum, ullam, asperiores magnam beatae quisquam eius hic earum odio.</h2>
-                        <a href="cv.docx" class="btn" dowload>
+                        <h2>I am a full stack web developer student, 
+                            highly responsible and motivated. I consider myself a quick learner and always willing to do my best
+                              to grow both personally and professionally.
+                            </h2>
+                        <a href="./assets/doc/obedestradaCV.docx" class="btn" dowload>
                             Download CV
                             <i class="fa-solid fa-file-arrow-down"></i>
                         </a>
@@ -81,38 +91,38 @@
             <!--SKILLS SECTION=-->
             <section class="skills containerSkills" id="skills" data-aos="fade-up" data-aos-duration="1000">
                 <!--heading-->
-                <h2 class="heading ">Habilidades</h2>
+                <h2 class="heading ">Abilities</h2>
                 <!--skills content-->
                 <div class="skill-content">
                     <div class="skills-box">
                         <i class="fa-brands fa-html5"></i>
                         <h2>HTML</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut tempora in repellat molestiae iste tempore, assumenda ea nisi consectetur eveniet, ex accusantium. Reprehenderit, et. Sunt tempore necessitatibus tenetur placeat.</P>
+                        
                     </div>
                     <div class="skills-box">
                         <i class="fa-brands fa-css3"></i>
                         <h2>CSS</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut tempora in repellat molestiae iste tempore, assumenda ea nisi consectetur eveniet, ex accusantium. Reprehenderit, et. Sunt tempore necessitatibus tenetur placeat.</P>
+                        
                     </div>
                     <div class="skills-box">
                         <i class="fa-brands fa-js"></i>
                         <h2>Javascript</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut tempora in repellat molestiae iste tempore, assumenda ea nisi consectetur eveniet, ex accusantium. Reprehenderit, et. Sunt tempore necessitatibus tenetur placeat.</P>
-                    </div>
+                       
+                   </div>
                     <div class="skills-box">
                         <i class="fa-solid fa-language"></i>
                         <h2>B2 English</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut tempora in repellat molestiae iste tempore, assumenda ea nisi consectetur eveniet, ex accusantium. Reprehenderit, et. Sunt tempore necessitatibus tenetur placeat.</P>
+                       
                     </div>
                     <div class="skills-box">
                         <i class="fa-brands fa-react"></i>
                         <h2>React</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut tempora in repellat molestiae iste tempore, assumenda ea nisi consectetur eveniet, ex accusantium. Reprehenderit, et. Sunt tempore necessitatibus tenetur placeat.</P>
+                        
                     </div>
                     <div class="skills-box">
                         <i class="fa-brands fa-node"></i>
                         <h2>Node Js</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ut tempora in repellat molestiae iste tempore, assumenda ea nisi consectetur eveniet, ex accusantium. Reprehenderit, et. Sunt tempore necessitatibus tenetur placeat.</P>
+                        
                     </div>
                     
                 </div>
@@ -121,7 +131,7 @@
             <!--PORTFOLIO SECTION-->
             <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
                 <!--heading-->
-                <h2 class="heading">Portafolio</h2>
+                <h2 class="heading">Projects</h2>
                 <!--portfolio content-->
                 <div class="portfolio-content"> 
                     <div class="portfolio-box">
@@ -150,19 +160,19 @@
             <!--CONTACT SECTION-->
             <section class="contact" data-aos="fade-up" data-aos-duration="500">
                 <!--heading-->
-                <h2 class="heading">Contacto</h2>
+                <h2 class="heading">Contact</h2>
                 <div class= "contact-container" id="contact">
 
 
                     <form class="form"   action="https://formspree.io/f/mpzbkpyd"
                     method="POST">
                         <div class="form-container">
-                            <h2 class="form-title">Contact me</h2>
+                            <h2 class="form-title">CONTACT ME</h2>
                             <input type="text" class="form-input" placeholder="Name" name="name">
                             <input type="email" class="form-input" placeholder="Email" name="email">
                             <textarea class="form-input form-input-message" placeholder="Message:" name="message"></textarea>
 
-                            <input type="submit" value="enviar" class="form-cta">
+                            <input type="submit" value="send" class="form-cta">
 
 
 
@@ -177,8 +187,8 @@
         <!--FOOTER-->
         <footer class="footer container" id="footer">
             <div class="social">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/estrada-torres-158946233/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Jobed20"><i class="fa-brands fa-github"></i></a>
                 <a href="Mailto:obedestrada52@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 
                 </div>
@@ -196,7 +206,5 @@
   <script>
     AOS.init();
   </script>
-  <script  type="text/javascript" src="./particulas.js/particles.min.js"></script>
-  <script  type="text/javascript" src="./particulas.js/custom.js"></script>
   </body>
 </html>

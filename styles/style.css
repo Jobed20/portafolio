@@ -58,6 +58,7 @@ html::-webkit-scrollbar{
   background: transparent;
 
 }
+
 html::-webkit-scrollbar-thumb{
   background: var(--heading-color);
   
@@ -73,13 +74,6 @@ html::-webkit-scrollbar-thumb{
   position: relative;
 }
 
-.hidden{
-  display: none;
-}
-
-.intro{
-  background-color: #98a7fc;
-}
 
 .nav{
   display: flex;
@@ -97,9 +91,6 @@ html::-webkit-scrollbar-thumb{
   z-index: 100;
 }
 
-
-
-
 .logo{
   font-size: 25px;
   padding: 0 50px;
@@ -107,14 +98,11 @@ html::-webkit-scrollbar-thumb{
   color: var(--main-color);
   padding-top: 20px;
 }
+
 nav{
   background: var(--body-color);
   height: 80px;
   width: 100%;
-}
-.enlace{
-  position: absolute;
-  padding: 20px 50px;
 }
 
 nav ul{
@@ -123,11 +111,13 @@ nav ul{
   padding-top: 20px;
   
 }
+
 nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
+
 nav ul li a{
   color: rgb(247, 245, 245);
   font-size: 15px;
@@ -135,10 +125,12 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
+
  li a:hover{
   background: var(--container-color);
   transition: .5s;
 }
+
 .checkbtn{
   font-size: 30px;
   color: #fff;
@@ -148,6 +140,7 @@ nav ul li a{
   cursor: pointer;
   display: none;
 }
+
 #check{
   display: none;
 }
@@ -311,13 +304,13 @@ nav ul li a{
 
 
 .skills-box:hover{
-  transform: scale(1.06);
+  transform: scale(1.10);
   transition: 0.5s all cubic-bezier(0.075,0.82, 0.165,1);
-  box-shadow: 5px 5px 10px rgb(61, 57, 57) ;
+  box-shadow: 5px 5px 10px var(--container-color) ;
 }
 
 .skills-box .fa-brands{
-  font-size: 1.4rem;
+  font-size: 3rem;
   color: var(--main-color );
   padding: 10px;
   border-radius: 5rem;
@@ -327,7 +320,7 @@ nav ul li a{
 }
 
 .skills-box .fa-solid{
-  font-size: 1.4rem;
+  font-size: 3rem;
   color: var(--main-color );
   padding: 10px;
   border-radius: 5rem;
@@ -336,9 +329,9 @@ nav ul li a{
 }
 
 .skills-box .fa-{
-  font-size: 1.4rem;
+  font-size: 3 rem;
   color: var(--main-color );
-  padding: 10px;
+  padding: 15px;
   border-radius: 5rem;
   border: 2px dashed var(--main-color);
 
@@ -346,24 +339,19 @@ nav ul li a{
 
 
 .skills-box h2{
-  font-size: 1.1rem;
+  font-size: 2 rem;
   font-weight: 500;
   margin: 0.5rem 0;
   color: var(--main-color);
 }
 
-.skills-box p{
-  font-size: 0.9rem;
-  color: var(--box-color);
-
- 
-}
 
 .containerSkills{
   background-color: var(--box-color);
   max-width: 95%;
   margin: auto;
-  width: 80%;
+  width: 70%;
+  
 }
 
 
@@ -371,6 +359,9 @@ nav ul li a{
 /* Portafolio=====*/
 .portfolio{
   background-color: var(--body-color);
+  background-image: url(../assets/imagenes/Group\ 99.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
  padding-bottom: 150px;
   margin: auto;
@@ -424,12 +415,14 @@ nav ul li a{
   border-radius: 1rem;
   border: 1px solid black;
   
+  
 }
 
 .contact-container{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 
 }
 
@@ -438,6 +431,7 @@ nav ul li a{
   display: grid;
   gap: 1rem;
   grid-auto-columns: 100%;
+  background-image: url(../assets/imagenes/Group\ 98.svg);
 
 }
 
