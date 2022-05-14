@@ -115,6 +115,26 @@ margin: 10px;
 
 
 /* RESPONSIVE******************************************************* */
+
+@media(max-width:1800px){
+  .container{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .containerSkills{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .logo{
+    font-size: 25px;
+  }
+  .header{
+    height: 60px;
+  }
+}
+
 @media(max-width:990px){
   .container{
     margin: 0 auto;
@@ -129,7 +149,9 @@ margin: 10px;
   .logo{
     font-size: 25px;
   }
-  
+  .header{
+    height: 60px;
+  }
 }
 
 @media(max-width:892px){
@@ -167,7 +189,7 @@ ul{
 }
 nav ul li{
     display: block;
-    margin: 20px 0;
+    margin: 35px 0;
     line-height: 20px;
 }
 nav ul li a{
@@ -268,6 +290,14 @@ li a:hover{
     background: var(--container-color);
     transition: .5s;
   }
+
+  nav ul li{
+    display: block;
+    margin: 25px 0;
+    line-height: 20px;
+}
+
+
 }
 
 @media(max-width:635px){
@@ -291,6 +321,11 @@ li a:hover{
 li a:hover{
   background: var(--container-color);
   transition: .5s;
+}
+nav ul li{
+  display: block;
+  margin: 15  px 0;
+  line-height: 20px;
 }
 }
 
@@ -342,6 +377,11 @@ li a:hover{
 li a:hover{
   background: var(--container-color);
   transition: .5s;
+}
+nav ul li{
+  display: block;
+  margin: 19px 0;
+  line-height: 20px;
 }
 
 
